@@ -47,7 +47,7 @@
         justify="center"
       >
         <v-col cols="6">
-          <h1 class="display-1">Why teach through TakeLessons?</h1>
+          <h1 class="display-1">Why teach through Ozel Ders Ariyorum?</h1>
         </v-col>
       </v-row>
     </v-col>
@@ -82,6 +82,52 @@
         </v-col>
       </v-row>
     </v-col>
+    <v-col cols="12" class="text-center">
+      <v-row
+        align="center"
+        justify="center"
+      >
+        <v-col cols="6">
+          <h1 class="display-1">Explore Subjects You Can Teach</h1>
+        </v-col>
+      </v-row>
+    </v-col>
+    <v-col cols="12" class="text-center">
+      <v-row
+        justify="center"
+        align="center"
+      >
+        <v-col cols="3">
+          <LandingCard
+            icon= "mdi-map-legend"
+            title= "Local Lessons"
+            description= "With hundreds of subjects, the possibilities are endless.
+              Here are a few of our most popular."
+            iconColor= "primary"
+          />
+        </v-col>
+
+      </v-row>
+      <v-row
+        justify="center"
+        align="center"
+      >
+        <v-col cols="6">
+          <Subjects :subjects='subjectArray'/>
+        </v-col>
+      </v-row>
+    </v-col>
+    <v-col cols="12" class="text-center">
+      <v-divider class="my-6"></v-divider>
+        <p class="headline primary--text ">Ready to start teaching?</p>
+        <v-btn
+          color="success"
+          large
+        >
+          Get Started
+        </v-btn>
+      <v-divider class="my-6"></v-divider>
+    </v-col>
   </v-row>
 </div>
 </template>
@@ -89,6 +135,7 @@
 <script>
 import LandingCard from '@/components/Home/LandingCard.vue';
 import Badge from '@/components/BecomeTeacher/Badge.vue';
+import Subjects from '@/components/BecomeTeacher/Subjects.vue';
 
 
 export default {
@@ -96,6 +143,7 @@ export default {
   components: {
     LandingCard,
     Badge,
+    Subjects,
   },
   data() {
     return {
@@ -142,6 +190,48 @@ export default {
           title: '$227k',
           description: 'earned by top teacher',
           backgroundColor: 'accent',
+        },
+      ],
+      subjectArray: [
+        {
+          title: 'Math',
+          to: 'about',
+        },
+        {
+          title: 'Guitar',
+          to: 'about',
+        },
+        {
+          title: 'Piano',
+          to: 'about',
+        },
+        {
+          title: 'Singing',
+          to: 'about',
+        },
+        {
+          title: 'Violin',
+          to: 'about',
+        },
+        {
+          title: 'Spanish',
+          to: 'about',
+        },
+        {
+          title: 'German',
+          to: 'about',
+        },
+        {
+          title: 'French',
+          to: 'about',
+        },
+        {
+          title: 'Korean',
+          to: 'about',
+        },
+        {
+          title: 'Dance',
+          to: 'about',
         },
       ],
     };
