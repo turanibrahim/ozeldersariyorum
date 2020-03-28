@@ -30,7 +30,7 @@ export default {
 }
 
 #body {
-  margin-top: 100px;
+  margin-top: 64px;
   margin-bottom: 100px;
 }
 </style>
