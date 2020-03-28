@@ -1,5 +1,5 @@
 ## ozeldersariyorum
-This project created and containing by İbrahim Turan. Project desinged and developing like a side project. Require techs are Vue, Vuetify.
+Project was desinged and developing like a side project. Used techs are vue.js and vuetify 2.0
 
 ## Project setup
 ```
