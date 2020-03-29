@@ -23,6 +23,11 @@ const routes = [
     name: 'BecomeTeacher',
     component: () => import('../views/BecomeTeacher.vue'),
   },
+  {
+    path: '/lessonCategories',
+    name: 'LessonCategories',
+    component: () => import('../views/LessonCategories.vue'),
+  },
 ];
 
 const router = new VueRouter({
