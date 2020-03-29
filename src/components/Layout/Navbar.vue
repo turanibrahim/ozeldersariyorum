@@ -75,7 +75,11 @@
                           v-for="category in categories"
                           :key="category.name"
                         >
-                          <DropdownCard :lessons="category.lessons" :name="category.name"/>
+                          <DropdownCard
+                            :lessons="category.lessons"
+                            :name="category.name"
+                            :categoryLink="category.categoryLink"
+                          />
                         </v-col>
                       </v-row>
                     </v-col>
@@ -163,6 +167,7 @@ export default {
       categories: [
         {
           name: 'Category 1',
+          categoryLink: '/lessonCategories',
           lessons: [
             {
               name: 'Lesson Name 1',
@@ -184,6 +189,7 @@ export default {
         },
         {
           name: 'Category 2',
+          categoryLink: '/lessonCategories',
           lessons: [
             {
               name: 'Lesson Name 1',
@@ -205,6 +211,7 @@ export default {
         },
         {
           name: 'Category 3',
+          categoryLink: '/lessonCategories',
           lessons: [
             {
               name: 'Lesson Name 1',
@@ -226,6 +233,7 @@ export default {
         },
         {
           name: 'Category 4',
+          categoryLink: '/lessonCategories',
           lessons: [
             {
               name: 'Lesson Name 1',
@@ -247,6 +255,7 @@ export default {
         },
         {
           name: 'Category 5',
+          categoryLink: '/lessonCategories',
           lessons: [
             {
               name: 'Lesson Name 1',
@@ -258,7 +267,7 @@ export default {
             },
             {
               name: 'Lesson Name 3',
-              route: '/about',
+              route: '/lessonCategories',
             },
             {
               name: 'Lesson Name 4',
