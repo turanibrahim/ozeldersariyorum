@@ -28,6 +28,18 @@
           </v-list-item>
         </v-list>
       </v-card-text>
+      <v-card-actions>
+        <v-row>
+          <v-col>
+            <v-btn
+              text
+              dark
+              block
+              :to="categoryLink"
+            >More ></v-btn>
+          </v-col>
+        </v-row>
+      </v-card-actions>
     </v-card>
   </div>
 </template>
@@ -37,6 +49,7 @@ export default {
   props: {
     name: String,
     lessons: Array,
+    categoryLink: String,
   },
   data() {
     return {
