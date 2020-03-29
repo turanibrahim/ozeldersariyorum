@@ -1,5 +1,7 @@
 ## ozeldersariyorum
 Project was desinged and developing like a side project. Used techs are vue.js and vuetify 2.0
+## Live Preview
+https://ozeldersariyorum.herokuapp.com/
 
 ## Project setup
 ```
