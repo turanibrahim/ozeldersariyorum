@@ -42,6 +42,7 @@
           :chipColor='category.chipColor'
           v-for="category in categories"
           :key="category.title"
+          :subtitle="category.subtitle"
         />
       </v-col>
       <v-col cols="10" class="text-center">
@@ -178,7 +179,7 @@ export default {
         {
           title: 'Music Lessons',
           chipColor: 'secondary',
-          describe: 'Discover your creative side.',
+          subtitle: 'Discover your creative side.',
           lessons: [
             {
               lessonId: 1,
@@ -217,6 +218,7 @@ export default {
         {
           title: 'Langueage  Lessons',
           chipColor: 'primary',
+          subtitle: 'For career, travel, or fun.',
           lessons: [
             {
               lessonId: 1,
