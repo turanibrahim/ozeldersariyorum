@@ -24,9 +24,9 @@ const routes = [
     component: () => import('../views/BecomeTeacher.vue'),
   },
   {
-    path: '/lessonCategories',
-    name: 'LessonCategories',
-    component: () => import('../views/LessonCategories.vue'),
+    path: '/category',
+    name: 'Category',
+    component: () => import('../views/Category.vue'),
   },
 ];
 

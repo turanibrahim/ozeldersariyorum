@@ -10,7 +10,7 @@
       <v-col cols="6">
         <v-divider></v-divider>
       </v-col>
-      <v-col cols="10">
+      <v-col cols="9">
         <CategoryLessons
           :title="category.title"
           :lessons='category.lessons'
@@ -20,7 +20,7 @@
           :subtitle="category.subtitle"
         />
       </v-col>
-      <v-col cols="8" class="text-center mt-4">
+      <v-col cols="9" class="text-center mt-4">
         <h1 class="display-1" :class="LandingCardsTextColor">
           Meet a Few of Our Amazing Instructors
         </h1>
@@ -29,16 +29,38 @@
           your music lessons are live, interactive, and customized for you.
         </p>
       </v-col>
+      <v-col cols="9" class="text-center">
+        <v-row
+          justify="center"
+          align="center"
+        >
+          <v-col cols="4" v-for="teacher in teachers" :key="teacher.id">
+            <TeachersCard
+              :profileImage="teacher.profileImage"
+              :name="teacher.name"
+              :surname="teacher.surname"
+              :starCount="teacher.starCount"
+              :reviewCount="teacher.reviewCount"
+              :lessonMoney="teacher.lessonMoney"
+              :badges="teacher.badges"
+              :attributes="teacher.attributes"
+              :profileLink="teacher.profileLink"
+            />
+          </v-col>
+        </v-row>
+      </v-col>
     </v-row>
   </div>
 </template>
 
 <script>
 import CategoryLessons from '@/components/Home/CategoryLessons.vue';
+import TeachersCard from '@/components/Category/TeachersCard.vue';
 
 export default {
   components: {
     CategoryLessons,
+    TeachersCard,
   },
   data() {
     return {
@@ -121,6 +143,33 @@ export default {
               image: 'https://cdn.vuetifyjs.com/images/cards/cooking.png',
             },
           ],
+        },
+      ],
+      teachers: [
+        {
+          id: 1,
+          profileImage: 'https://pbs.twimg.com/profile_images/1243619088976556032/23WEBaWr_400x400.jpg',
+          name: 'İbrahim',
+          surrname: 'Turan',
+          starCount: 5,
+          reviewCount: '9999+',
+          lessonMoney: 50,
+          badges: [
+            {
+              color: 'accent',
+              title: 'Best Teacher',
+            },
+            {
+              color: 'success',
+              title: 'Great Teacher',
+            },
+          ],
+          attributes: [
+            'Speaks English, Turkish',
+            'Teaching since 1998(Also he\'s brith year)',
+            'Teaches Beginner, Intermediate, Advanced',
+          ],
+          profileLink: '/teachers/1',
         },
       ],
     };
