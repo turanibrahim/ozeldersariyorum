@@ -35,7 +35,7 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-col cols="10">
+      <v-col cols="9">
         <CategoryLessons
           :title="category.title"
           :lessons='category.lessons'
@@ -45,7 +45,7 @@
           :subtitle="category.subtitle"
         />
       </v-col>
-      <v-col cols="10" class="text-center">
+      <v-col cols="9" class="text-center">
         <v-row
           align="start"
           justify="center"
@@ -71,7 +71,7 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-col cols="10" class="text-center">
+      <v-col cols="9" class="text-center">
         <v-row
           align="start"
           justify="center"
@@ -124,7 +124,7 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-col cols="10" class="text-center">
+      <v-col cols="9" class="text-center">
         <v-row
           align="center"
           justify="center"
