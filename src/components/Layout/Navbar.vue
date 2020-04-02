@@ -61,29 +61,31 @@
                     </v-btn>
                   </template>
 
-                  <v-row
-                    justify="center"
-                    align="center"
-                  >
-                    <v-col cols="11" class="py-0 my-0">
-                      <v-row
-                        justify="center"
-                        align="center"
-                      >
-                        <v-col
-                          :cols="calculateWidth"
-                          v-for="category in categories"
-                          :key="category.name"
+                  <v-card>
+                    <v-row
+                      justify="center"
+                      align="center"
+                    >
+                      <v-col cols="11" class="py-0 my-0">
+                        <v-row
+                          justify="center"
+                          align="center"
                         >
-                          <DropdownCard
-                            :lessons="category.lessons"
-                            :name="category.name"
-                            :categoryLink="category.categoryLink"
-                          />
-                        </v-col>
-                      </v-row>
-                    </v-col>
-                  </v-row>
+                          <v-col
+                            :cols="calculateWidth"
+                            v-for="category in categories"
+                            :key="category.name"
+                          >
+                            <DropdownCard
+                              :lessons="category.lessons"
+                              :name="category.name"
+                              :categoryLink="category.categoryLink"
+                            />
+                          </v-col>
+                        </v-row>
+                      </v-col>
+                    </v-row>
+                  </v-card>
                 </v-menu>
                 <v-btn
                   exact

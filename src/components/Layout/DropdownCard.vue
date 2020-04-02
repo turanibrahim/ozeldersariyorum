@@ -1,6 +1,6 @@
 <template>
   <div id="dropdownCard">
-    <v-card shaped class="py-0 my-0" :color="backgroundColor">
+    <v-card shaped class="py-0 my-0" color="primary">
       <v-card-title>
         <v-row
           justify="center"
@@ -52,9 +52,6 @@ export default {
     categoryLink: String,
   },
   data() {
-    return {
-      backgroundColor: 'rgb(63,81,181, 0.7)',
-    };
   },
 };
 </script>
