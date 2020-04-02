@@ -167,7 +167,7 @@ export default {
       categories: [
         {
           name: 'Category 1',
-          categoryLink: '/lessonCategories',
+          categoryLink: '/category',
           lessons: [
             {
               name: 'Lesson Name 1',
@@ -189,7 +189,7 @@ export default {
         },
         {
           name: 'Category 2',
-          categoryLink: '/lessonCategories',
+          categoryLink: '/category',
           lessons: [
             {
               name: 'Lesson Name 1',
@@ -211,7 +211,7 @@ export default {
         },
         {
           name: 'Category 3',
-          categoryLink: '/lessonCategories',
+          categoryLink: '/category',
           lessons: [
             {
               name: 'Lesson Name 1',
@@ -233,7 +233,7 @@ export default {
         },
         {
           name: 'Category 4',
-          categoryLink: '/lessonCategories',
+          categoryLink: '/category',
           lessons: [
             {
               name: 'Lesson Name 1',
@@ -255,7 +255,7 @@ export default {
         },
         {
           name: 'Category 5',
-          categoryLink: '/lessonCategories',
+          categoryLink: '/category',
           lessons: [
             {
               name: 'Lesson Name 1',
@@ -267,7 +267,7 @@ export default {
             },
             {
               name: 'Lesson Name 3',
-              route: '/lessonCategories',
+              route: '/category',
             },
             {
               name: 'Lesson Name 4',
@@ -293,7 +293,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
   .button-active {
     border-bottom: 3px solid #ffc107;
   }
