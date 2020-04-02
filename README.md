@@ -37,15 +37,15 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Docker Commands
+```
 Depends
  -Docker
  -Docker-compose
-
+```
+```
 docker build -t ozeldersariyorum . //dont forget to dot on end
-
 docker run -it -p 8000:80 --name ozeldersariyorum-build ozeldersariyorum // for build and use production stage
-
 docker-compose up --build //create build and container for development stage
-
 docker-compose start //use it after created container
+```
 
