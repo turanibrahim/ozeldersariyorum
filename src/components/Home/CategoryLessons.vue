@@ -1,5 +1,5 @@
 <template>
-  <v-container class="px-10">
+  <div id="categoryLessons">
     <v-row
       align="start"
       justify="start"
@@ -67,7 +67,7 @@
         </v-card>
       </v-col>
     </v-row>
-  </v-container>
+  </div>
 </template>
 
 <script>
