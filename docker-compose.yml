@@ -1,0 +1,42 @@
+version: '3.3'
+services:
+  webserver:
+    image: nginx:1.16.1
+    volumes:
+      - ./:/var/www
+            ## copy nginx configuration for our application ##
+      - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
+    ports:
+            ## run the webserver on port 8080 ##
+      - "80:80"
+  app:
+        ## read php image from our custom docker image ##
+    build:
+      context: .
+      dockerfile: ./docker/php/Dockerfile
+    volumes:
+      ## copy project files to /var/www ##
+      - ./:/var/www
+    working_dir: /var/www
+
+  db:
+    image: mysql/mysql-server:latest
+    restart: always
+    ## keep mysql data on localhost so we don't lose them ##
+    volumes:
+      - ./docker-volumes-data/db:/var/lib/database
+    environment:
+      MYSQL_DATABASE: 'ozeldersariyorum'
+      # So you don't have to use root, but you can if you like
+      MYSQL_USER: 'admin'
+      # You can use whatever password you like
+      MYSQL_PASSWORD: 'ozeldersariyorum'
+      # Password for root access
+      MYSQL_ROOT_PASSWORD: 'root'
+    ports:
+      # <Port exposed> : < MySQL Port running inside container>
+      - '3306:3306'
+    expose:
+      # Opens port 3306 on the container
+      - '3306'
+      # Where our data will be persisted
