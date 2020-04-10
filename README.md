@@ -6,7 +6,7 @@ Ozeldersariyorum is online tutor finding website. Tutors will create resume abou
 ```
 docker- compose build
 docker-compose up
-docker exec -it [app_container] bash (-d if you want to detach)
+docker exec -it [app_container] bash
   ->npm run watch(or watch-poll)
 ```
 
