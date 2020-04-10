@@ -1,7 +1,4 @@
 ## Ozeldersariyorum
-
-Ozeldersariyorum is online tutoring website. Tutors will creating resource about themselfs and students find them for tutoring
-
 Ozeldersariyorum is online tutor finding website. Tutors will create resume about themselves and students will find tutors for their lessons via this website.
 
 ## Docker/Docker-compose Users
